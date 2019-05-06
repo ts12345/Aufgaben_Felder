@@ -34,7 +34,11 @@ public class Feldbearbeiter {
      * berechnet das kummulative Produkt der Werte im Feld
      */
     public double produkt() {
-        return 0.0;  
+        double res = 1;
+        for (double d : feld) {
+            res *= d;
+        }
+        return res;
     }
 
     /*
