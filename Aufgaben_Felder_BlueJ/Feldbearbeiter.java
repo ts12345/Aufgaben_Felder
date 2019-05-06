@@ -9,7 +9,11 @@ public class Feldbearbeiter {
      * bestimmt das Minimum des Feldes
      */
     public double min() {
-        return 0.0;
+        double min = 9E99;
+        for(double x : feld) {
+            if(x < min) min = x;
+        }
+        return min;
     }
 
     /*
