@@ -56,6 +56,13 @@ public class Feldbearbeiter {
      * aus 1,2,3 wird 3,2,1 usw.
      */
     public void dreheFeldUm() {
+        double[] kopie = new double[feld.length];
+        for(int i = 0; i < feld.length; i++){
+            kopie[i] = feld[i];
+        }
+        for(int i = 0; i < feld.length; i++){
+            feld[i] = kopie[kopie.length-i-1];
+        }
     }
 
     /*
