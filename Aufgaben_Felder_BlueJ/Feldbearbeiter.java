@@ -20,7 +20,11 @@ public class Feldbearbeiter {
      * bestimmt das Maximum des Feldes
      */
     public double max() {
-        return 0.0;
+        double max = -9E99;
+        for(double x : feld) {
+            if(x > max) max = x;
+        }
+        return max;
     }
 
     /*
