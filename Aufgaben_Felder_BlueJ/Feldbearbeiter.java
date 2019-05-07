@@ -52,7 +52,9 @@ public class Feldbearbeiter {
      * berechnet den Mittelwert der Werte im Feld
      */
     public double mittelwert() {
-        return 0.0;
+        double wert = summe();
+        wert = wert/feld.length;
+        return wert;
     }
 
     /*
