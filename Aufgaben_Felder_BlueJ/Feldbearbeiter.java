@@ -31,9 +31,12 @@ public class Feldbearbeiter {
      * berechnet die Summe der Werte im Feld
      */
     public double summe() {
-        return 0.0;
+        double summe = 0;
+        for(int i = 0; i < feld.length; i++){
+            summe = summe + feld[i];
+        }
+        return summe;
     }
-
     /*
      * berechnet das kummulative Produkt der Werte im Feld
      */
